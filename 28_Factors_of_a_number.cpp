@@ -10,7 +10,7 @@ int main()
     {
         if (n % i == 0)
         {
-            cout << "The factor of" << n << " is " << i << endl;
+            cout << "The factor of " << n << " is " << i << endl;
         }
     }
 
