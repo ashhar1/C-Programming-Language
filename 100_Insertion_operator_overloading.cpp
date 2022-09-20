@@ -13,28 +13,20 @@ public:
         real = r;
         img = i;
     }
-    friend ostream &operator<<(ostream &o, Complex &c1);
-    friend Complex operator+(Complex c1, Complex c2);
+    friend ostream &operator<<(ostream &o, Complex &c);
 };
-ostream &operator<<(ostream &o, Complex &c1)
+ostream &operator<<(ostream &o, Complex &c)
 {
-    o << c1.real << "+" << c1.img << "i";
+    o << c.real << "+" << c.img << "i" << endl; // if using cout then don't put endl in this statement
     return o;
-}
-Complex operator+(Complex c1, Complex c2)
-{
-    Complex temp;
-    temp.real = c1.real + c2.real;
-    temp.img = c1.img + c2.img;
-    return temp;
 }
 int main()
 {
-    Complex c1(5, 3), c2(10, 5), c3;
-    cout << c1 << endl;
-    cout << c2 << endl;
-    c3 = c1 + c2;
-    cout << c3 << endl;
+    Complex c1(5, 3), c2(10, 5);
+    // cout << c1 << endl;
+    operator<<(cout, c1);
+    // cout << c2 << endl;
+    operator<<(cout, c2);
 
     return 0;
 }
