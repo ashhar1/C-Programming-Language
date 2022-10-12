@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    ofstream ofs("My.Text", ios::trunc);
+    ofstream ofs("My.txt", ios::trunc);
     ofs << "Ashhar" << endl;
     ofs << 106 << endl;
     ofs << "CSE" << endl;
