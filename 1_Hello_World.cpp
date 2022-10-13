@@ -9,7 +9,7 @@ int main()
     /*
     cout << "What is your name?" << endl;
     cin >> name;
-    //for giving out the output as full name we use getlin(cin, name); instead of cin >>
+    //for giving out the output as full name we use getline(cin, name); instead of cin >>
     cout << "Hi, Mr/Miss "<< name << endl;
     
     return 0;
