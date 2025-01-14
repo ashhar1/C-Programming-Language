@@ -6,11 +6,11 @@ int main()
     int a = 10, b = 11, i = 5, j = 6;
     if (a > b && ++i < b)
     {
+        cout << i << endl;
     }
-    cout << i << endl;
     if (a < b || ++j > b)
     {
+         cout << j << endl;
     }
-    cout << j << endl;
     return 0;
 }
